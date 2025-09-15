@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Configure 3-Pane Layout"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="24dp" />
+
+    <TextView
+        android:id="@+id/tvTopApp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Top App: Not set"
+        android:layout_marginBottom="4dp" />
+    <Button
+        android:id="@+id/btnSelectTopApp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Top App"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/tvBottomLeftApp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bottom Left App: Not set"
+        android:layout_marginBottom="4dp" />
+    <Button
+        android:id="@+id/btnSelectBottomLeftApp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Bottom Left App"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/tvBottomRightApp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bottom Right App: Not set"
+        android:layout_marginBottom="4dp" />
+    <Button
+        android:id="@+id/btnSelectBottomRightApp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Bottom Right App"
+        android:layout_marginBottom="24dp" />
+
+    <TextView
+        android:id="@+id/tvTopHeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Top Height: 33%"
+        android:layout_marginBottom="8dp" />
+    <SeekBar
+        android:id="@+id/seekBarTopHeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="80"
+        android:min="20"
+        android:progress="33"
+        android:layout_marginBottom="24dp" />
+
+    <Button
+        android:id="@+id/btnSaveConfig"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Configuration" />
+</LinearLayout>
