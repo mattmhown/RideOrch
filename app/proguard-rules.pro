@@ -1,0 +1,2 @@
+-keep class com.internal.layout.orchestrator.** { *; }
+-dontwarn com.google.gson.**
