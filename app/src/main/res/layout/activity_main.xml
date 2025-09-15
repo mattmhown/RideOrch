@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3-Pane Layout Orchestrator"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp" />
+
+    <Button
+        android:id="@+id/btnApplyLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Apply 3-Pane Layout"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btnConfigureApps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Configure Apps"
+        android:layout_marginBottom="24dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Enable Watchdog Service"
+            android:textSize="16sp" />
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/switchWatchdog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <TextView
+        style="@style/TextAppearance.AppCompat.Caption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Instructions:\n1. Grant all requested permissions.\n2. Configure your 3 apps.\n3. Enable the watchdog service.\n4. Apply the layout.\n5. Use the Quick Settings tile to reset the layout."
+        android:layout_marginTop="24dp"
+        android:background="#EEE"
+        android:padding="12dp" />
+</LinearLayout>
